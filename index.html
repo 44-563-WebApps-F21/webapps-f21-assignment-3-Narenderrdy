@@ -1,8 +1,21 @@
 <!DOCTYPE>  
 <html>  
-<head> 
+    <head> 
+ <style>  
+      ol {
+  counter-reset: item
+}
+li {
+  display: block
+}
+li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item
+}
+  </style>
 <title>Project01 HTML</title> 
-</head>  
+
+    </head>  
 <body>  
 
 <h1>Narender Reddy Palle</h1>  
@@ -11,5 +24,19 @@
 <p>Hyderabad is among the most developd indian cities.My hometown is in Hyderabad and The city of Hyderabad is famous for its <b>rich architecture culture</b>.And <b>Hyderabad biriyani</b> is most famous dish of Hyderabad.
     And most of my friends lives in Hyderabad.</p>
 
+ 
+<hr>
+<h2>Directions from New York to Chicago</h2>
+<ol>
+    <li>Take a cab and go the new york airport.
+        <ol>
+            <li>And the estimated flight time is 2hr by flight.</li> 
+            <li>Its appromiately 1200kms.</li>
+        </ol>
+    </li>
+        <li>The Distance may be very much different from the actual travel distance.</li>
+    <li> After reaching the chicago Airport take the cab and go the ur favorite places in Chicago.</li>
+</ol>
+
 </body>
-</html>  
+</html> 
